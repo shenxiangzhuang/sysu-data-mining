@@ -10,20 +10,20 @@
 
 #### 分析流程
 
-分析的核心代码为`EDA.R`, 此外也在`Jupyter notebook`写了一遍，加上了下面各图的解释说明，以及各种描述统计量的计算等， 具体见[EDA.ipynb]()。以下图片均来自`pics`文件夹（供做课件）。
+分析的核心代码为`EDA.R`, 此外也在`Jupyter notebook`写了一遍，加上了下面各图的解释说明，以及各种描述统计量的计算等， 具体见[EDA.ipynb](https://nbviewer.jupyter.org/github/shenxiangzhuang/SysuDMCourse/blob/master/EDA/EDA.ipynb)。以下图片均来自`pics`文件夹（供做课件）。
 
 ##### 评论字数的分析
 
-![hist](./pics/hist.png)
+<center><img src="./pics/hist.png" width="450"></center>
 
-![](./pics/violin.png)
+
+<center><img src="./pics/violin.png" width="450"></center>
+
 
 ##### 词云
 
-![](./pics/wordcloud.png)
-
+<center><img src="./pics/wordcloud.png" width="450"></center>
 
 
 ##### 点赞趋势的分析
-
-![](./pics/trending.png)
+<center><img src="./pics/trending.png" width="450"></center>
