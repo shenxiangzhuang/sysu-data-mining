@@ -14,8 +14,8 @@
 
 ##### 评论字数的分析
 
-<center><img src="./pics/hist.png" width="450"></center>
 
+<center><img src="./pics/hist.png" width="450"></center>
 
 <center><img src="./pics/violin.png" width="450"></center>
 
