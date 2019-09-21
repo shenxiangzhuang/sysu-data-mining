@@ -10,9 +10,13 @@
 
 #### 分析流程
 
-分析的核心代码为`EDA.R`, 此外也在`Jupyter notebook`写了一遍，加上了下面各图的解释说明，以及各种描述统计量的计算等， 具体见[EDA.ipynb]()。以下图片均来自`pics`文件夹（供做课件）。
+分析的核心代码为`EDA.R`, 此外也在`Jupyter notebook`写了一遍，加上了下面各图的解释说明，以及各种描述统计量的计算等， 具体见[EDA.ipynb](https://nbviewer.jupyter.org/github/shenxiangzhuang/SysuDMCourse/blob/master/EDA/EDA.ipynb)。以下图片均来自`pics`文件夹（供做课件）。
 
 ##### 评论字数的分析
+
+```
+<img src="./pics/hist.png" width="300">
+```
 
 ![hist](./pics/hist.png)
 
