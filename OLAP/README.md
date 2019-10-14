@@ -20,9 +20,13 @@
 
 #### OLAP系统搭建流程
 
+
 这里按照Cubes的框架进行搭建。示意图如下：
 
+
 ![](https://cubes.readthedocs.io/en/latest/_images/logical-to-physical.png)
+
+
 
 在我们配置好数据仓库的模型和映射之后，我们可以很好地分离数据的物理应用层和逻辑层，之后可以直接在逻辑层进行数据的探索分析操作，而不必再去关心数据的物理应用层。
 
