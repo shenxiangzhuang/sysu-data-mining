@@ -8,7 +8,6 @@
 ### 数据集描述
 本次数据集(`BilibiliGaomu.csv`)来自B站其中一部番剧的评论数据，共包含`mid, username, rpid, gender,content, ctime, likes, rcount`八个字段，共77474条评论数据。因为框架的具有十分良好的可扩充性，经过简单的预处理(`Preprocessing.py`)，可以十分方便地将之前爬虫采集的数据集成进去。处理后的数据集(`data.csv`)包含如下字段。
 
-<center>
 
 | 字段   |       含义     |
 |----------|:-------------:|
@@ -17,12 +16,12 @@
 | likes | 评论获赞数 |
 | wordnum | 评论字数 |
 | month | 评论月份 |
-</center>
-
 
 
 #### OLAP系统搭建流程
+
 这里按照Cubes的框架进行搭建。示意图如下：
+
 ![](https://cubes.readthedocs.io/en/latest/_images/logical-to-physical.png)
 
 在我们配置好数据仓库的模型和映射之后，我们可以很好地分离数据的物理应用层和逻辑层，之后可以直接在逻辑层进行数据的探索分析操作，而不必再去关心数据的物理应用层。
