@@ -1,0 +1,20 @@
+Authors
+=======
+
+CubesViewer by Jose Juan Montes.
+
+Development:
+
+* José Juan Montes <jjmontes@gmail.com>
+  https://twitter.com/jjmontes
+
+* Stefan Urbanek <stefan@stiivi.com>
+  http://stiivi.com/
+
+Other contributors:
+
+* Enrique Hernández
+* Alexander Bessonov
+* Nuno Khan
+* Devin Howard
+

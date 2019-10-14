@@ -1,0 +1,377 @@
+/*
+ * Cubesviewer CSS
+ */
+
+.cv-bootstrap {
+
+    @import "bower_components/bootstrap/less/bootstrap.less";
+    @import "bower_components/bootstrap/less/responsive-embed.less";
+    /*@import "bower_components/bootstrap-submenu/less/bootstrap-submenu.less";*/
+
+    @font-family-sans-serif:  Helvetica, Arial, sans-serif;
+    @font-family-serif:       Georgia, "Times New Roman", Times, serif;
+    @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+    @font-family-base:        @font-family-sans-serif;
+
+    @font-size-base: 12px;
+    @panel-heading-padding: 5px 5px;
+    @panel-body-padding: 5px;
+
+    @grid-gutter-width: 10px;
+
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    .panel {
+       margin-bottom: 10px;
+    }
+
+    h3 {
+        margin-top: 0px;
+        margin-bottom: 5px;
+    }
+
+    /* UI grid hacks */
+    .ui-grid-pager-panel {
+        margin-bottom: -32px;
+    }
+    .ui-grid-pager-control-input {
+        width: 70px;
+    }
+    .ui-grid-pager-max-pages-number {
+        vertical-align: middle;
+    }
+    .ui-grid-selection-row-header-buttons {
+        margin-left: -2px;
+    }
+    .ui-grid-column-menu-button:focus {
+        outline: none;
+    }
+    .ui-grid-menu-button {
+        height: 24px;
+        width: 13px;
+        top: 0px;
+        right: 0px;
+        text-align: center;
+    }
+    .ui-grid-menu-button i::before {
+        margin: 0px;
+    }
+    .ui-grid-menu-mid {
+        max-height: 200px !important;
+        width: 190px;
+        overflow-x: hidden !important;
+    }
+    .ui-grid-menu .ui-grid-menu-inner ul li button {
+        padding: 6px;
+    }
+    div.ui-grid-pager-panel {
+        height: 32px;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .ui-grid-canvas {
+        -webkit-touch-callout: initial;
+        -webkit-user-select: initial;
+        -khtml-user-select: initial;
+        -moz-user-select: initial;
+        -ms-user-select: initial;
+        user-select: initial;
+    }
+    .ui-grid-row:nth-child(even) .ui-grid-cell {
+        background-color: #F1F4FF;
+    }
+    .ui-grid-row .ui-grid-cell.ui-grid-row-header-cell {
+        background-color: #f0f0ee;
+    }
+
+
+    /* Datepicker popup hack */
+    div ul.uib-datepicker-popup.dropdown-menu {
+        display: block;
+        font-size: 12px;
+        padding: 0px 0px 10px 0px;
+    }
+    .cv-infopiece .uib-datepicker-popup.dropdown-menu button {
+        line-height: 1.5;
+        padding: 4px 8px;
+    }
+
+    /* Override glyphicon and use fontawesome */
+    .cv-view-panel .glyphicon {
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+    }
+    .glyphicon.glyphicon-chevron-left:before {
+        content: "\f053";
+    }
+    .glyphicon.glyphicon-chevron-right:before {
+        content: "\f054";
+    }
+
+}
+
+
+/*
+*/
+
+.cv-view-panel, .cv-gui-viewcontainer {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.cv-gui-panel .dropdown-menu li {
+    cursor: pointer;
+}
+
+.cv-view-panel .dropdown-menu li {
+    cursor: pointer;
+}
+
+.cv-gui-title {
+    font-weight: bold;
+}
+
+.cv-alerts {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 5000;
+}
+
+/*
+.cv-view-panel a:link {
+	text-decoration: none;
+}
+*/
+
+.cv-grid-header-dimension {
+    color: #004400;
+}
+.cv-grid-header-dimensionattribute {
+    color: #666666;
+}
+.cv-grid-header-measure {
+    color: #444477;
+}
+
+
+
+/*
+.ui-slider-range {
+    background-color: red;
+    background-image: none;
+}
+
+.cv-view-panel div {
+	margin: 0px;
+	padding: 0px;
+}
+*/
+
+/*
+.cv-view-panel td, th {
+    vertical-align: middle;
+    text-align: inherit;
+    padding: 2px 2px 2px 2px;
+}
+
+.cv-view-panel input[type=checkbox] {
+    margin: 0px !important;
+}
+*/
+
+/* Override blueprint highlight */
+/*
+.cv-view-panel .highlight {background: inherit;}
+*/
+
+/*
+Custom Cubesviewer styles
+*/
+
+/*
+.cv-view-panel input {
+    vertical-align: middle;
+}
+
+.cv-view-panel input {
+	border: 1px solid #d0d0d0;
+	padding: 0px 2px 0px 2px;
+}
+
+.cv-view-panel h1 {
+    font-variant: small-caps;
+    font-weight: bold;
+    margin: 0px 0px 10px 0px;
+    color: #8686BF;
+    font-size: 20pt;
+}
+
+.cv-view-panel h2 {f
+    font-variant: small-caps;
+    font-weight: bold;
+    margin: 0px 0px 10px 0px;
+    color: #8686BF;
+    font-size: 16pt;
+}
+
+.cv-view-panel h3, .nvtooltip h3 {
+    font-variant: small-caps;
+    font-weight: bold;
+    margin: 0px 0px 10px 0px;
+    color: #8686BF;
+    font-size: 12pt;
+}
+
+.cv-view-panel label {
+    font-weight: inherit;
+}
+*/
+
+
+.cv-view-panel th {
+    white-space: nowrap;
+}
+
+
+
+.nobreak {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.ui-jqgrid tr.jqgrow td {
+    white-space: nowrap !important;
+    /*overflow: hidden;*/
+}
+
+/* GUI Elements */
+
+.cv-gui-panel {
+    z-index: 9999;
+    margin-bottom: 10px;
+}
+
+.cv-gui-workspace {
+    /*margin-left: 230px;*/
+    min-height: 320px;
+}
+
+div.cv-gui-viewcontainer {
+	margin-bottom: 10px;
+}
+
+div.cv-gui-panelsection {
+	margin-bottom: 10px;
+}
+
+div.cv-view-viewinfo {
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+div.cv-infopiece {
+    display: inline-block;
+}
+div.cv-infopiece>span {
+    vertical-align: middle;
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+div.label.cv-infopiece {
+    font-size: inherit;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+div.label.cv-infopiece button {
+    line-height: 1.0;
+    padding: 1px;
+}
+
+.fixed {
+   position: fixed;
+}
+
+.nvtooltip table {
+	margin: 0px ;
+}
+.nvtooltip table td {
+    border: none;
+}
+div.nvtooltip {
+	background-color : rgba(255,255,255,0.9);
+}
+
+/*
+.ui-grid .ui-grid-render-container-body .ui-grid-viewport {
+    overflow-x: auto !important;
+}
+*/
+
+
+/* Loading bar */
+
+.loadingbar-content {
+    width: 100%;
+    /* Full Width */
+    height: 3px;
+    margin: -4px 0px 1px 0px;
+    //position: fixed;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.loadingbar-expand {
+    width: 99%;
+    height: 1px;
+    margin: 1px 0;
+    background: #2187e7;
+    position: absolute;
+    box-shadow: 0px 0px 6px 1px rgba(0,198,255,0.8);
+    -moz-animation: fullexpand 60s ease-out;
+    -webkit-animation: fullexpand 60s ease-out;
+}
+
+@-moz-keyframes fullexpand {
+    0%  { width: 0px; }
+    20%  { width: 50%; }
+    40% { width: 75%; }
+    60% { width: 85%; }
+    80% { width: 95%; }
+    100% { width: 99%; }
+}
+
+@-webkit-keyframes fullexpand {
+    0%  { width: 0px; }
+    20%  { width: 50%; }
+    40% { width: 75%; }
+    60% { width: 90%; }
+    80% { width: 95%; }
+    100% { width: 99%; }
+}
+
+/*
+CV Logo
+*/
+.cv-logo-embedded {
+    background:
+        url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAAeCAYAAACIeIa4AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAC4jAAAuIwF4pT92AAAAB3RJTUUH4AUIAQ8FIfSUygAABKVJREFUWMPtmE9MHFUYwH9vWRYoQiuFoKE1kGBDXzlosbFeuEClakxjTNrYYkyLKaniQaMmcjAeqknFYE1EUiMxNPGgHAwR1IQ0aaE1RY1iUr9tqYm0B638EdYCLt0/42FmYXachV0YDk36JZvd/d68N/Ob9/17H9yR21PUWhcwtPYDXwNPKpEFmx4lgqF1N9ChRL53zEOJJH7XAgeAaqAIyAMiwCzwB/CtEul0zltXOEPrTcAvwH3ANKCVyA1D68TaXwL7rMtrlciQDVoBzwDvAmVp3vJDoF2J/J4OpFoDWAHwl/WWEzID3KtEwobW3wB7HdPqlcgZQ+ty4Fdgwypv/7oSaVuXnTO0vgu4CtzjMjwNXAMecBmLA+8DLwGBRW00CpEI7NoFO3dCYSHE4zA6CoODMD0N+fnOtQaUyKPL7aDKAChhTuXAKJC9Zo+PRqG4GA4dgqNHwe93v254GE6ehJER8PnsIz8BDwNRN0CV4Y4VA+NeBCLTC2uhszP968+cgeZmyMmxa99TIq+5Xe5LZ8es7/uBMU/AwmFobMwMDKCuDvr6nNpXDa33ZGyWNlOsAX70LAHt3g1dXaufPzQETU2QvegZVwHtNE+Vxs5VWZHN5wnY/DxcvAilpUnqyOQk/4yMELt5E+X3s6Gykvzt21Ov09oKvb12TbkSubaiWdpM8TEg6BlYPG4GDztYPM7MhQv8fe4csdlZUAojFmMuGGSyv5/Y3Jz7WgcPQixm17Ss6HM2U3zCqjy8lWPHkv7OBoPcGh9HZWU5nsxHPBJhamAAIxnClOpqyLOnWJ5dEc4Cexz4ynOwjRuhoGDpRUYizAWDoJb3jvD16+4D9fX23StdFs7QGkPrl4F+z8K9XXJzk3LZrakpZ95yT4ehkPvAtm2mqS89f9FyO5cFNKxbmW4YyVbi8/1Pl3ERkLzrsZRwSiSmRPYCPesCFw6bZZYlgZKStOCyi4rcBy5dSoJTIqF0Asp+4DPP4WZmYGLC9jYVhTU1qQENA18gQO7Wre7jg4OwFIh+SzegoEQagY89hfP5oC25mM+rqCC3vNwEtH2MWAx/YSGbGxrcA87wcJIVAKczri0NrTuAFzwDXFgwk++OHckpMBxm7vJloqEQvkCAvMpK02xTSXMznD9v97UtSuTGasqvd4A3PAOsrHRWF5lJdzccPw6BxVPTz8BDSiSeduFsM9FW4E3P4IJBOHzYWWGkJ2fPwokTdjCARifYao48rcDbnkGWlZlVfvKDppb2djh1ynnua1EiHV4dVo8AXWvEMgCFYZjRrr7e9KGqKvdc1t0NPT0wNmaPjgCnlchzqU7jq20zPG9FUrf5bUCT1cVySg/wAdAHbEpK7vPzZnvB3ma4csVsNeTk2I83CflIibzoSZvBBXA/8LlDfUSJfGpoXQL8aVU8CelQIi3W3DzguxR9lhXjLbBHiQytmHlW3fAU+QKos5o+APssMJTIBFABzNtaAS2Jo5QS+VeJPAg8ksHJYwZotrprQ4m11qu1l/DBp4DNSuQTp4kYWhcCryiRt1zG7E3Zu4GngVpgC5ALRIGQ1RftVSI/ZNqUvSO3q/wHjjvb2rWTZoYAAAAASUVORK5CYII=)
+        no-repeat
+        left center;
+    width: 55px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+}

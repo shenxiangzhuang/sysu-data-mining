@@ -1,1 +1,16 @@
+# member's submit
 *.pptx
+*.docx
+Preprocess
+
+# member data
+id.txt
+
+
+# extra file
+OLAP/cube*
+OLAP/demo
+Dockerfile
+
+# cache
+.vscode

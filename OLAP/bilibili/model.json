@@ -1,0 +1,58 @@
+{
+    "dimensions": [
+        {
+         "name":"Comment",
+         "levels": [
+                {
+                    "name":"sex",
+                    "label":"Sex",
+                    "attributes": ["sex"]
+                },
+                {
+                    "name":"username",
+                    "label":"User-Name",
+                    "attributes": ["username"]
+                },
+                {
+                    "name":"wordnum",
+                    "label":"Number of comment words",
+                    "attributes": ["wordnum"]
+                }
+            ]
+        },
+        {"name":"month", "role": "time"}
+    ],
+    "cubes": [
+        {
+            "name": "Gaomu",
+            "dimensions": ["Comment", "month"],
+            "measures": [{"name":"likes", "label":"Likes"},
+                         {"name":"wordnum", "label":"WordNumber"}],
+            "aggregates": [
+                    {
+                        "name": "likes_sum",
+                        "function": "sum",
+                        "measure": "likes"
+                    },
+                    {
+                        "name": "word_sum",
+                        "function": "sum",
+                        "measure": "wordnum"
+                    },
+                    {
+                        "name": "record_count",
+                        "function": "count"
+                    }
+                ],
+            "mappings": {
+                          "Comment.wordnum": "wordnum",
+                          "Comment.username": "username",
+                          "Comment.sex": "sex"
+                         },
+            "info": {
+                "min_date": "2019-06-01",
+                "max_date": "2019-10-01"
+            }
+        }
+    ]
+}

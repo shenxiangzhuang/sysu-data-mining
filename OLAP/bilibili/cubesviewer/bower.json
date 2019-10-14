@@ -1,0 +1,57 @@
+{
+  "name": "cubesviewer",
+  "description": "CubesViewer JS client app",
+  "main": "cubesviewer",
+  "authors": [
+    "Jose Juan Montes <jjmontes@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "olap",
+    "visualization",
+    "cubes"
+  ],
+  "homepage": "https://github.com/jjmontesl/cubesviewer",
+  "moduleType": [
+    "globals"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "2.2.3",
+    "nvd3": "1.8.2",
+    "bootstrap": "3.3.6",
+    "flotr2": "*",
+    "font-awesome": "Font-Awesome#4.6.1",
+    "bootstrap-submenu": "^2.0.4",
+    "angular": "^1.5.5",
+    "angular-bootstrap": "1.3.2",
+    "angular-ui-grid": "^3.1.1",
+    "angular-bootstrap-slider": "^0.1.27",
+    "angular-cookies": "^1.5.5"
+  },
+  "exportsOverride": {
+    "jquery": {
+      "/": "dist/**/*.*"
+    },
+    "bootstrap": {
+      "/": "dist/**/*.*"
+    },
+    "bootstrap-submenu": {
+      "css": "dist/css/*.*",
+      "js": "dist/js/*.*"
+    },
+    "font-awesome": {
+      "css": "css/*.*",
+      "fonts": "fonts/*.*"
+    },
+    "flotr2": {
+        "/": "*.*"
+    }
+  }
+}
